@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/assets/sepotipe_logo.png">
+  <style>
+    a, h2 {
+      margin: 0;
+    }
+
+    body, html {
+      height: 100%;
+      margin: 5px;
+      padding: 0;
+      background-color: black;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      grid-template-rows: 100%;
+      height: 100%;
+      column-gap: 10px;
+    }
+
+    .main-content {
+      background-color: #212121;
+      border-radius: 0.5rem;
+      padding: 10px;
+    }
+
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    
+    .section-one {
+      display: flex;
+      flex-direction: column;
+      border-radius: 0.5rem;
+      background-color: #212121;
+      gap: 1.5rem;
+      padding: 20px;
+    }
+
+    .section-two {
+      display: flex;
+      flex-direction: column;
+      border-radius: 0.5rem;
+      background-color: #212121;
+      padding: 20px;
+      height: 100%;
+    }
+
+    .home-btn a, .search-btn a, .title-section a {
+      font-size: 20px;
+      font-family: sans-serif;
+      text-decoration: none;
+      color: white;
+      opacity: 0.7;
+      font-weight: 500;
+      padding-left: 20px;
+    }
+
+    .home-btn a:hover, .search-btn a:hover, .title-section a:hover{
+      opacity: 1;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding: 20px;
+      gap: 1rem;
+    }
+
+    .main-content h2 {
+      font-family: sans-serif;
+      font-weight: 600;
+      color: white;
+    } 
+
+    .most-played-section, .all-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .songs {
+      display: grid;
+      width: 100%;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto auto;
+      row-gap: 10px;
+      column-gap: 10px;
+    }
+
+    .song {
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(21, 21, 21);
+      border-radius: 0.5rem;
+      color: white;
+    }
+
+    .title-section {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="section-one">
+          <div class="home-btn">
+            <a href="#">Home</a>
+          </div>
+          <div class="search-btn">
+            <a href="#">Search</a>
+          </div>
+      </div>
+      <div class="section-two">
+        <div class="library">
+          <div class="title-section">
+            <a href="#">Your Library</a>
+          </div>
+          <div class="playlists">
+            <div class="playlist"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="most-played-section">
+        <h2>Most Played Songs</h2>
+        <div class="songs">
+          <div class="song">
+            <p>test</p>
+          </div>
+          <div class="song">
+            <p>test</p>
+          </div>
+          <div class="song">
+            <p>test</p>
+          </div>
+          <div class="song">
+            <p>test</p>
+          </div>
+          <div class="song">
+            <p>test</p>
+          </div>
+          <div class="song">
+            <p>test</p>
+          </div>
+        </div>
+      </div>
+      <div class="all-section">
+        <div class="title-section">
+          <h2>All Songs</h2>
+          <button>+</button>
+        </div>
+        <div class="songs">
+          <div class="song">
+            <p>test</p>
+          </div>
+          <div class="song">
+            <p>test</p>
+          </div>
+          <div class="song">
+            <p>test</p>
+          </div>
+          <div class="song">
+            <p>test</p>
+          </div>
+          <div class="song">
+            <p>test</p>
+          </div>
+          <div class="song">
+            <p>test</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
